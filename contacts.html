@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+</head>
+
+<body>
+  <div style="font-family:verdana; padding-inline-start: 5px;">
+    <h3 style="color: lightsalmon; "> <strong> My Contact Details: </strong> </h3>
+    <p style="font: size 120%;">
+      <strong> My Address: </strong> </p>
+    <p style="font: size 120%;"> <strong> Telephone: </strong> </p>
+    <p style="font: size 120%;"> <strong> My Email: </strong></p>
+  </div>
+
+
+  <form class="" action="index.html" method="POST">
+    <div style="font-family:verdana; padding-inline-start: 5px;">
+      <label style=""> <strong> Your Name </strong></label>
+      <input type="text" name="" value="" required>
+      <input type="color" name="" value="" style="">
+      <br>
+      <br>
+      <label> <strong>Do you want to sign up to the email list? </strong> </label>
+      <input type="checkbox" name="" value="" required>
+      <br>
+      <br>
+      <label> <strong> Your Password </strong> </label>
+      <input type="password" name="" value="" required>
+      <input type="submit" name="">
+  </form>
+  </div>
+  <!-- NOTE: don't use br outside! put it inside the paragraph/container use CSS for margins!-->
+  <br>
+  <!-- Submit Button is a type of INPUT FORM -->
+  <!-- class="form-example" removed from it as we transform it in a mailto version-->
+  <form action="mailto:zhasif500@gmail.com" method="POST" enctype="text/plain">
+
+    <!-- class="form-example" removed from it as we transform it in a mailto version-->
+    <!-- we are going to have to change the encoding type as well such that '%'' signs etc are not in the text when we POST IT-->
+    <div style="font-family:verdana; padding-inline-start: 5px;">
+      <label for="name">Enter your name: </label>
+      <!-- 'name' attribute allows us how to classify the data when we POST it eg. to the email-->
+      <input type="text" name="name" required>
+    </div>
+
+    <div style="font-family:verdana; padding-inline-start: 5px;">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div style="font-family:verdana; padding-inline-start: 5px;">
+      <label for="message">Your Message is: <br> </label>
+      <textarea name="message" rows="8" cols="33"> </textarea>
+    </div>
+
+    <div style="font-family:verdana; padding-inline-start: 5px;">
+      <input type="submit" value="Subscribe!">
+    </div>
+
+  </form>
+
+</body>
+
+</html>
